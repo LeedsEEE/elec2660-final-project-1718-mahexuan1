@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A44C69A1FD4B64D00A0E9AD /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */; };
+		3A44C69D1FD4B66D00A0E9AD /* EditBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */; };
+		3A44C6A01FD4B69200A0E9AD /* CreatBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */; };
+		3A44C6A31FD4B6B400A0E9AD /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */; };
+		3A44C6A61FD4B6F900A0E9AD /* AddCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6A51FD4B6F900A0E9AD /* AddCostViewController.m */; };
+		3A44C6AC1FD4B73B00A0E9AD /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6AB1FD4B73B00A0E9AD /* AddressViewController.m */; };
+		3A44C6AF1FD4B7A800A0E9AD /* DataDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6AE1FD4B7A800A0E9AD /* DataDisplayTableViewController.m */; };
+		3A44C6B21FD4B7D400A0E9AD /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6B11FD4B7D400A0E9AD /* DateViewController.m */; };
+		3A44C6B51FD4B80900A0E9AD /* Cost.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6B41FD4B80900A0E9AD /* Cost.m */; };
 		3A8564C11FC619DA00EC9120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8564C01FC619DA00EC9120 /* AppDelegate.m */; };
 		3A8564C41FC619DA00EC9120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A8564C31FC619DA00EC9120 /* ViewController.m */; };
 		3A8564C71FC619DA00EC9120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8564C51FC619DA00EC9120 /* Main.storyboard */; };
@@ -35,6 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A44C6981FD4B64D00A0E9AD /* BillsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BillsViewController.h; sourceTree = "<group>"; };
+		3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
+		3A44C69B1FD4B66D00A0E9AD /* EditBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditBillViewController.h; sourceTree = "<group>"; };
+		3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditBillViewController.m; sourceTree = "<group>"; };
+		3A44C69E1FD4B69200A0E9AD /* CreatBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatBillViewController.h; sourceTree = "<group>"; };
+		3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatBillViewController.m; sourceTree = "<group>"; };
+		3A44C6A11FD4B6B400A0E9AD /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
+		3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
+		3A44C6A41FD4B6F900A0E9AD /* AddCostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCostViewController.h; sourceTree = "<group>"; };
+		3A44C6A51FD4B6F900A0E9AD /* AddCostViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCostViewController.m; sourceTree = "<group>"; };
+		3A44C6AA1FD4B73B00A0E9AD /* AddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		3A44C6AB1FD4B73B00A0E9AD /* AddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		3A44C6AD1FD4B7A800A0E9AD /* DataDisplayTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDisplayTableViewController.h; sourceTree = "<group>"; };
+		3A44C6AE1FD4B7A800A0E9AD /* DataDisplayTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataDisplayTableViewController.m; sourceTree = "<group>"; };
+		3A44C6B01FD4B7D400A0E9AD /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		3A44C6B11FD4B7D400A0E9AD /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		3A44C6B31FD4B80900A0E9AD /* Cost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cost.h; sourceTree = "<group>"; };
+		3A44C6B41FD4B80900A0E9AD /* Cost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cost.m; sourceTree = "<group>"; };
 		3A8564BC1FC619DA00EC9120 /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A8564BF1FC619DA00EC9120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3A8564C01FC619DA00EC9120 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,9 +132,27 @@
 				3A8564C01FC619DA00EC9120 /* AppDelegate.m */,
 				3A8564C21FC619DA00EC9120 /* ViewController.h */,
 				3A8564C31FC619DA00EC9120 /* ViewController.m */,
+				3A44C6981FD4B64D00A0E9AD /* BillsViewController.h */,
+				3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */,
+				3A44C69B1FD4B66D00A0E9AD /* EditBillViewController.h */,
+				3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */,
+				3A44C69E1FD4B69200A0E9AD /* CreatBillViewController.h */,
+				3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */,
+				3A44C6A11FD4B6B400A0E9AD /* MyAccountViewController.h */,
+				3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */,
+				3A44C6A41FD4B6F900A0E9AD /* AddCostViewController.h */,
+				3A44C6A51FD4B6F900A0E9AD /* AddCostViewController.m */,
+				3A44C6AA1FD4B73B00A0E9AD /* AddressViewController.h */,
+				3A44C6AB1FD4B73B00A0E9AD /* AddressViewController.m */,
 				3A8564C51FC619DA00EC9120 /* Main.storyboard */,
 				3A8564C81FC619DA00EC9120 /* Assets.xcassets */,
 				3A8564CA1FC619DA00EC9120 /* LaunchScreen.storyboard */,
+				3A44C6B01FD4B7D400A0E9AD /* DateViewController.h */,
+				3A44C6B11FD4B7D400A0E9AD /* DateViewController.m */,
+				3A44C6AD1FD4B7A800A0E9AD /* DataDisplayTableViewController.h */,
+				3A44C6AE1FD4B7A800A0E9AD /* DataDisplayTableViewController.m */,
+				3A44C6B31FD4B80900A0E9AD /* Cost.h */,
+				3A44C6B41FD4B80900A0E9AD /* Cost.m */,
 				3A8564CD1FC619DA00EC9120 /* Info.plist */,
 				3A8564CE1FC619DA00EC9120 /* main.m */,
 			);
@@ -199,7 +244,7 @@
 				TargetAttributes = {
 					3A8564BB1FC619DA00EC9120 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3A8564D31FC619DB00EC9120 = {
 						CreatedOnToolsVersion = 9.0;
@@ -265,9 +310,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A44C69D1FD4B66D00A0E9AD /* EditBillViewController.m in Sources */,
+				3A44C6A01FD4B69200A0E9AD /* CreatBillViewController.m in Sources */,
+				3A44C6B21FD4B7D400A0E9AD /* DateViewController.m in Sources */,
 				3A8564C41FC619DA00EC9120 /* ViewController.m in Sources */,
+				3A44C6A61FD4B6F900A0E9AD /* AddCostViewController.m in Sources */,
+				3A44C6AF1FD4B7A800A0E9AD /* DataDisplayTableViewController.m in Sources */,
+				3A44C6B51FD4B80900A0E9AD /* Cost.m in Sources */,
+				3A44C69A1FD4B64D00A0E9AD /* BillsViewController.m in Sources */,
 				3A8564CF1FC619DA00EC9120 /* main.m in Sources */,
+				3A44C6AC1FD4B73B00A0E9AD /* AddressViewController.m in Sources */,
 				3A8564C11FC619DA00EC9120 /* AppDelegate.m in Sources */,
+				3A44C6A31FD4B6B400A0E9AD /* MyAccountViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +484,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,11 +499,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.ac.leeds.Final-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
