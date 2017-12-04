@@ -7,8 +7,7 @@
 //
 
 #import "EditBillViewController.h"
-
-
+#import "BillsViewController.h"
 @interface EditBillViewController ()
 
 @end
@@ -21,7 +20,11 @@
     _billNameTF.text = _oldBillName;
 }
 
-
+- (IBAction)modifyBillName:(id)sender {
+    BillsViewController *billsVC = (BillsViewController *)self.superVC;
+    [billsVC updateData:self.billNameTF.text];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
