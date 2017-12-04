@@ -10,4 +10,6 @@
 
 @interface MyAccountViewController : UIViewController
 
+@property (nonatomic, strong)UIViewController *superVC;
+
 @end
