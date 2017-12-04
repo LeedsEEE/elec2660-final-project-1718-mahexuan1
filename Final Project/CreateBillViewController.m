@@ -1,5 +1,5 @@
 //
-//  CreatBillViewController.m
+//  CreateBillViewController.m
 //  Final Project
 //
 //  Created by wandou on 2017/12/3.

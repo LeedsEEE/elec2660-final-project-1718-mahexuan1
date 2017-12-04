@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A44C69A1FD4B64D00A0E9AD /* BillsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */; };
 		3A44C69D1FD4B66D00A0E9AD /* EditBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */; };
-		3A44C6A01FD4B69200A0E9AD /* CreatBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */; };
+		3A44C6A01FD4B69200A0E9AD /* CreateBillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C69F1FD4B69200A0E9AD /* CreateBillViewController.m */; };
 		3A44C6A31FD4B6B400A0E9AD /* MyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */; };
 		3A44C6A61FD4B6F900A0E9AD /* AddCostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6A51FD4B6F900A0E9AD /* AddCostViewController.m */; };
 		3A44C6AC1FD4B73B00A0E9AD /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44C6AB1FD4B73B00A0E9AD /* AddressViewController.m */; };
@@ -48,8 +48,8 @@
 		3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillsViewController.m; sourceTree = "<group>"; };
 		3A44C69B1FD4B66D00A0E9AD /* EditBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditBillViewController.h; sourceTree = "<group>"; };
 		3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditBillViewController.m; sourceTree = "<group>"; };
-		3A44C69E1FD4B69200A0E9AD /* CreatBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreatBillViewController.h; sourceTree = "<group>"; };
-		3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreatBillViewController.m; sourceTree = "<group>"; };
+		3A44C69E1FD4B69200A0E9AD /* CreateBillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateBillViewController.h; sourceTree = "<group>"; };
+		3A44C69F1FD4B69200A0E9AD /* CreateBillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateBillViewController.m; sourceTree = "<group>"; };
 		3A44C6A11FD4B6B400A0E9AD /* MyAccountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyAccountViewController.h; sourceTree = "<group>"; };
 		3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyAccountViewController.m; sourceTree = "<group>"; };
 		3A44C6A41FD4B6F900A0E9AD /* AddCostViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCostViewController.h; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 				3A44C6991FD4B64D00A0E9AD /* BillsViewController.m */,
 				3A44C69B1FD4B66D00A0E9AD /* EditBillViewController.h */,
 				3A44C69C1FD4B66D00A0E9AD /* EditBillViewController.m */,
-				3A44C69E1FD4B69200A0E9AD /* CreatBillViewController.h */,
-				3A44C69F1FD4B69200A0E9AD /* CreatBillViewController.m */,
+				3A44C69E1FD4B69200A0E9AD /* CreateBillViewController.h */,
+				3A44C69F1FD4B69200A0E9AD /* CreateBillViewController.m */,
 				3A44C6A11FD4B6B400A0E9AD /* MyAccountViewController.h */,
 				3A44C6A21FD4B6B400A0E9AD /* MyAccountViewController.m */,
 				3A44C6A41FD4B6F900A0E9AD /* AddCostViewController.h */,
@@ -311,7 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A44C69D1FD4B66D00A0E9AD /* EditBillViewController.m in Sources */,
-				3A44C6A01FD4B69200A0E9AD /* CreatBillViewController.m in Sources */,
+				3A44C6A01FD4B69200A0E9AD /* CreateBillViewController.m in Sources */,
 				3A44C6B21FD4B7D400A0E9AD /* DateViewController.m in Sources */,
 				3A8564C41FC619DA00EC9120 /* ViewController.m in Sources */,
 				3A44C6A61FD4B6F900A0E9AD /* AddCostViewController.m in Sources */,
