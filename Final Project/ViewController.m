@@ -33,7 +33,7 @@
     if (arr) {
         _billArrays = [NSMutableArray arrayWithArray:arr];
     }
-    [self seperateIncomeAndExpense];
+    [self separateIncomeAndExpense];
 }
 
 // update cost in each bill
@@ -52,8 +52,32 @@
         NSDictionary *temDic = [[NSDictionary alloc] initWithObjectsAndKeys:billName,@"name",temArr,@"data", nil];
         [_billArrays replaceObjectAtIndex:index withObject:temDic];
     }
-    [self seperateIncomeAndExpense];
+    [self separateIncomeAndExpense];
 }
+
+//separate income and expense
+- (void)separateIncomeAndExpense{
+    CGFloat expense = 0;
+    CGFloat income = 0;
+    for (int i = 0; i < _billArrays.count; i++) {
+        NSDictionary *dic = [_billArrays objectAtIndex:i];
+        NSArray *costArr = (NSArray *)[dic objectForKey:@"data"];
+        for (int j = 0; j < costArr.count; j ++) {
+            Cost *cost = (Cost *)[costArr objectAtIndex:j];
+            if ([cost.type isEqualToString:@"Expense"] && [cost.billName isEqualToString:self.billNameLabel.text]) {
+                [_expenseArrays addObject:cost];
+                expense = expense + [cost.value floatValue];
+            }
+            else if ([cost.type isEqualToString:@"Income"] && [cost.billName isEqualToString:self.billNameLabel.text]){
+                [_incomeArrays addObject:cost];
+                income = income + [cost.value floatValue];
+            }
+        }
+    }
+    self.expenseLabel.text = [NSString stringWithFormat:@"%.2f",expense];
+    self.incomeLabel.text = [NSString stringWithFormat:@"%.2f",income];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
