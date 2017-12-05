@@ -9,8 +9,8 @@
 #import "ViewController.h"
 #import "BillsViewController.h"
 #import "Cost.h"
-
-
+#import "AddCostViewController.h"
+#import "MyAccountViewController.h"
 
 @interface ViewController ()
 
@@ -27,10 +27,14 @@
     NSDictionary *defaultDic = [[NSDictionary alloc] initWithObjectsAndKeys:@"Default",@"name", nil];
     [_billArrays addObject:defaultDic];
 }
-
-
-
-
+//update data
+- (void)updateData:(NSArray *)arr withName:(NSString *)billName{
+    self.billNameLabel.text = billName;
+    if (arr) {
+        _billArrays = [NSMutableArray arrayWithArray:arr];
+    }
+    [self seperateIncomeAndExpense];
+}
 
 
 - (void)didReceiveMemoryWarning {
