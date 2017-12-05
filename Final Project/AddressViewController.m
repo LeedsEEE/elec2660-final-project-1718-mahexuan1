@@ -7,7 +7,7 @@
 //
 
 #import "AddressViewController.h"
-
+#import "AddCostViewController.h"
 @interface AddressViewController ()
 
 @end
@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+//user could input the address in it and the address would be shown in the page of add cost
+- (IBAction)confirm:(id)sender {
+    if (self.postCodeTF.text.length < 1) {
+        return;
+    }
+    AddCostViewController *addCostVC = (AddCostViewController *)self.superVC;
+    [addCostVC updateAddress:self.postCodeTF.text];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
