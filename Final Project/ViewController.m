@@ -77,7 +77,45 @@
     self.expenseLabel.text = [NSString stringWithFormat:@"%.2f",expense];
     self.incomeLabel.text = [NSString stringWithFormat:@"%.2f",income];
 }
+//prepare for segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"BillsViewController"]) {
+        BillsViewController *billsVC = (BillsViewController *)segue.destinationViewController;
+        billsVC.superVC = self;
+        billsVC.billArrays = _billArrays;
+    }
+    else if ([segue.identifier isEqualToString:@"AddCostViewController"]){
+        AddCostViewController *addCostVC = (AddCostViewController *)segue.destinationViewController;
+        addCostVC.superVC = self;
+        addCostVC.billName = self.billNameLabel.text;
+    }
+    else if ([segue.identifier isEqualToString:@"MyAccountViewController"]){
+        MyAccountViewController *myAccountVC = (MyAccountViewController *)segue.destinationViewController;
+        myAccountVC.superVC = self;
+    }
+}
 
+// connecting each button to their own page
+//the first one is home page
+- (IBAction)actionOne:(id)sender {
+    
+}
+
+//this button is used to choose you bill
+- (IBAction)YourBillName:(id)sender {
+    [self performSegueWithIdentifier:@"BillsViewController" sender:nil];
+    
+}
+
+//the second one is Data Display user can see the expense and income in month or in year
+- (IBAction)actionTwo:(id)sender {
+    [self performSegueWithIdentifier:@"DataDisplayTableViewController" sender:nil];
+}
+
+//the third one is Add Cost detaills(iteam, value, date, address)
+- (IBAction)actionThree:(id)sender {
+    [self performSegueWithIdentifier:@"AddCostViewController" sender:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
