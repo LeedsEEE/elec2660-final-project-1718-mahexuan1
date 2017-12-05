@@ -36,6 +36,24 @@
     [self seperateIncomeAndExpense];
 }
 
+// update cost in each bill
+- (void)updateCost:(Cost *)addCost withName:(NSString *)billName{
+    NSInteger index = -1;
+    NSMutableArray *temArr = nil;
+    for (NSDictionary *dic in _billArrays) {
+        if ([[dic objectForKey:@"name"] isEqualToString:billName]) {
+            temArr = [NSMutableArray arrayWithArray:[dic objectForKey:@"data"]];
+            [temArr addObject:addCost];
+            index = [_billArrays indexOfObject:dic];
+            break;
+        }
+    }
+    if (index > -1) {
+        NSDictionary *temDic = [[NSDictionary alloc] initWithObjectsAndKeys:billName,@"name",temArr,@"data", nil];
+        [_billArrays replaceObjectAtIndex:index withObject:temDic];
+    }
+    [self seperateIncomeAndExpense];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
