@@ -10,4 +10,8 @@
 
 @interface AddressViewController : UIViewController
 
+// connecting the elements to the view controller
+@property (nonatomic, strong)UIViewController *superVC;
+@property (weak, nonatomic) IBOutlet UITextField *postCodeTF;
+
 @end
