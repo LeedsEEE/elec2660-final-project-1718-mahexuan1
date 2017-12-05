@@ -10,7 +10,8 @@
 #import "CreateBillViewController.h"
 #import "EditBillViewController.h"
 #import "ViewController.h"
-@interface BillsViewController ()
+
+@interface BillsViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)NSString *temBillName;
 @property (nonatomic, assign)NSInteger lastIndex;
@@ -27,6 +28,7 @@
     _billTableView.dataSource = self;
     [_billTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"reuse"];
 }
+
 - (void)updateData:(NSString *)billName{
     if (!billName) {
         return;
@@ -71,19 +73,83 @@
         createBillVC.superVC = self;
     }
 }
+
+#pragma mark - Table view delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ViewController *VC = (ViewController *)self.superVC;
+    NSDictionary *dic = [_billArrays objectAtIndex:indexPath.row];
+    NSString *billName = [dic objectForKey:@"name"];
+    [VC updateData:_billArrays withName:billName];
+    [self.navigationController popViewControllerAnimated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewRowAction *action0 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Edit" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        NSDictionary *dic = [_billArrays objectAtIndex:indexPath.row];
+        _temBillName = [dic objectForKey:@"name"];
+        _lastIndex = indexPath.row;
+        [self performSegueWithIdentifier:@"EditBillViewController" sender:nil];
+        tableView.editing = NO;
+    }];
+    UITableViewRowAction *action1 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"Delete" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        [_billArrays removeObjectAtIndex:indexPath.row];
+        [_billTableView setEditing:NO animated:NO];
+        [_billTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }];
+    
+    return @[action1, action0];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        [_billArrays removeObjectAtIndex:indexPath.row];
+        [_billTableView setEditing:NO animated:NO];
+        [_billTableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _billArrays.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuse" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    NSDictionary *dic = [_billArrays objectAtIndex:indexPath.row];
+    NSString *billName = [dic objectForKey:@"name"];
+    cell.textLabel.text = billName;
+    
+    return cell;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
