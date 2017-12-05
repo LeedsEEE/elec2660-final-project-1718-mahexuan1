@@ -10,4 +10,8 @@
 
 @interface DateViewController : UIViewController
 
+//connecting the elements to the view controller
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePicker;
+@property (nonatomic, strong)UIViewController *superVC;
+
 @end
