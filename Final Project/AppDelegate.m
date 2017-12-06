@@ -18,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    UIViewController* vc= [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    UINavigationController *rootNavigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = rootNavigationController;
     return YES;
 }
 

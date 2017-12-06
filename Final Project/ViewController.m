@@ -117,6 +117,10 @@
     [self performSegueWithIdentifier:@"AddCostViewController" sender:nil];
 }
 
+// the last one is page of my account, user could add personal information
+- (IBAction)actionFour:(id)sender {
+    [self performSegueWithIdentifier:@"MyAccountViewController" sender:nil];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
