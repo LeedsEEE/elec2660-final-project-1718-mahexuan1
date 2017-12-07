@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-h3-I8C">
-                                <rect key="frame" x="106" y="159" width="147" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zx-z8-nHm">
                                 <rect key="frame" x="50" y="217" width="91" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb8-37-eWV">
-                                <rect key="frame" x="232" y="217" width="91" height="44"/>
+                                <rect key="frame" x="50" y="282" width="91" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Income">
@@ -62,14 +55,14 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPk-jq-bMO">
-                                <rect key="frame" x="50" y="297" width="82" height="35"/>
+                                <rect key="frame" x="138" y="222" width="82" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rph-vR-Hmz">
-                                <rect key="frame" x="232" y="297" width="78" height="35"/>
+                                <rect key="frame" x="142" y="282" width="78" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -96,6 +89,13 @@
                                     <action selector="YourBillName:" destination="dFq-eG-sZO" eventType="touchUpInside" id="qEC-7G-LKp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4g-h3-I8C">
+                                <rect key="frame" x="142" y="139" width="147" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -179,7 +179,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkm-pj-Cv8">
                                 <rect key="frame" x="136" y="199" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Date"/>
+                                <state key="normal" title="Select Date">
+                                    <color key="titleColor" red="0.50498875450000003" green="0.6473745085" blue="0.85422564089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectDate:" destination="AoN-NP-NYD" eventType="touchUpInside" id="GCd-pI-3fR"/>
                                 </connections>
@@ -187,7 +189,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njB-iS-geW">
                                 <rect key="frame" x="136" y="246" width="193" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter Address"/>
+                                <state key="normal" title="Enter Address">
+                                    <color key="titleColor" red="0.50498875450000003" green="0.6473745085" blue="0.85422564089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="selectAddress:" destination="AoN-NP-NYD" eventType="touchUpInside" id="Ark-cy-nMa"/>
                                 </connections>
@@ -201,6 +205,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="nHv-Y2-Ar5"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nf0-Ac-KQz">
@@ -255,6 +260,7 @@
                                 </connections>
                             </datePicker>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hTx-cx-DR1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Date" id="TY9-Wo-9hN">
@@ -296,6 +302,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="IV8-hP-qSR"/>
                     </view>
                     <navigationItem key="navigationItem" title="Address" id="iQH-9F-CW5">
@@ -313,7 +320,7 @@
             </objects>
             <point key="canvasLocation" x="999" y="2037"/>
         </scene>
-        <!--Your account-->
+        <!--Your Account-->
         <scene sceneID="YEG-kg-Ulx">
             <objects>
                 <viewController storyboardIdentifier="MyAccountViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tpm-jS-uJx" customClass="MyAccountViewController" sceneMemberID="viewController">
@@ -352,9 +359,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Esv-6h-cBk"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Your account" id="XaE-cU-uu3">
+                    <navigationItem key="navigationItem" title="Your Account" id="XaE-cU-uu3">
                         <barButtonItem key="rightBarButtonItem" image="ok" id="H9j-P7-cnN">
                             <connections>
                                 <action selector="confirm:" destination="Tpm-jS-uJx" id="oR3-Az-nYs"/>
@@ -374,7 +382,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="sectionIndexBackgroundColor" red="0.87052318900000003" green="0.91280399229999998" blue="0.93078044039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="134" id="IBf-HM-LZw">
                                 <rect key="frame" x="0.0" y="28" width="375" height="134"/>
@@ -457,7 +465,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxi-Jr-aOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="1149"/>
+            <point key="canvasLocation" x="1943" y="1148"/>
         </scene>
         <!--Account Book -->
         <scene sceneID="MBk-4C-hd7">
@@ -471,7 +479,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" red="0.87052318900000003" green="0.91280399229999998" blue="0.93078044039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hUB-Qf-LWp">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -502,7 +510,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bgJ-TP-95X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="216"/>
+            <point key="canvasLocation" x="1055" y="215"/>
         </scene>
         <!--Create Account Book-->
         <scene sceneID="N3b-5W-LSF">
@@ -528,6 +536,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="bIV-ZH-xuk"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Account Book" id="je1-lP-oAs">
@@ -543,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOp-PM-fDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="-636"/>
+            <point key="canvasLocation" x="1103" y="-636"/>
         </scene>
         <!--Edit Account Book name-->
         <scene sceneID="c1E-2E-wdz">
@@ -569,6 +578,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VUc-Xt-W7M"/>
                     </view>
                     <navigationItem key="navigationItem" title="Edit Account Book name" id="vFj-f6-pTM">
@@ -584,7 +594,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="weR-io-OGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="216"/>
+            <point key="canvasLocation" x="1913" y="215"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gGb-0c-DnE">
