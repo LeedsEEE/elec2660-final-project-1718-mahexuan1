@@ -85,11 +85,13 @@
                                     <action selector="actionOne:" destination="dFq-eG-sZO" eventType="touchUpInside" id="kYc-ep-jud"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-dQ-hBe">
-                                <rect key="frame" x="66" y="78" width="227" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMD-dQ-hBe">
+                                <rect key="frame" x="50" y="91" width="273" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Your Account Book"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Your Account Book" image="arrow_down">
+                                    <color key="titleColor" red="0.50498875450000003" green="0.6473745085" blue="0.85422564089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="YourBillName:" destination="dFq-eG-sZO" eventType="touchUpInside" id="qEC-7G-LKp"/>
                                 </connections>
@@ -203,10 +205,10 @@
                     <navigationItem key="navigationItem" id="Nf0-Ac-KQz">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DmP-6a-m7e">
-                            <rect key="frame" x="153" y="5" width="69" height="34"/>
+                            <rect key="frame" x="137" y="6" width="101" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Expense">
-                                <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Expense" image="arrow_down">
+                                <color key="titleColor" red="0.50498875450000003" green="0.6473745085" blue="0.85422564089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="titleBtnAction:" destination="AoN-NP-NYD" eventType="touchUpInside" id="T7h-U2-wP9"/>
@@ -285,7 +287,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0io-ct-g8H">
-                                <rect key="frame" x="52" y="231" width="178" height="30"/>
+                                <rect key="frame" x="52" y="209" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -434,10 +436,10 @@
                     <navigationItem key="navigationItem" id="upp-xU-m4N">
                         <nil key="title"/>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I6p-gK-mKM">
-                            <rect key="frame" x="153" y="5" width="69" height="34"/>
+                            <rect key="frame" x="137" y="6" width="101" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Expense">
-                                <color key="titleColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Expense" image="arrow_down">
+                                <color key="titleColor" red="0.50498875450000003" green="0.6473745085" blue="0.85422564089999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                             <connections>
                                 <action selector="costTypeAction:" destination="p9x-I4-rrT" eventType="touchUpInside" id="Rrb-5W-5JM"/>
@@ -597,10 +599,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="My" width="44" height="44"/>
-        <image name="add" width="44" height="44"/>
-        <image name="graph" width="44" height="44"/>
-        <image name="menu" width="44" height="44"/>
-        <image name="ok" width="44" height="44"/>
+        <image name="My" width="32" height="32"/>
+        <image name="add" width="32" height="32"/>
+        <image name="arrow_down" width="32" height="32"/>
+        <image name="graph" width="32" height="32"/>
+        <image name="menu" width="32" height="32"/>
+        <image name="ok" width="32" height="32"/>
     </resources>
 </document>
