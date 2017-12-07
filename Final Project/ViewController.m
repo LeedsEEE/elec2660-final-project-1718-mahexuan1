@@ -11,6 +11,7 @@
 #import "Cost.h"
 #import "AddCostViewController.h"
 #import "MyAccountViewController.h"
+#import "DataDisplayTableViewController.h"
 
 @interface ViewController ()
 
@@ -104,8 +105,8 @@
 //this button is used to choose you bill
 - (IBAction)YourBillName:(id)sender {
     [self performSegueWithIdentifier:@"BillsViewController" sender:nil];
-    
 }
+
 
 //the second one is Data Display user can see the expense and income in month or in year
 - (IBAction)actionTwo:(id)sender {

@@ -10,4 +10,11 @@
 
 @interface DataDisplayTableViewController : UITableViewController
 
+//connecting the element to the view controller
+@property (weak, nonatomic) IBOutlet UIButton *costType;//income expense
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *intervalType;//month year
+@property (weak, nonatomic) IBOutlet UIButton *intervalBtn;
+@property (nonatomic, strong)NSMutableArray *billArr;
+@property (nonatomic, strong)UIViewController *superVC;
+
 @end
