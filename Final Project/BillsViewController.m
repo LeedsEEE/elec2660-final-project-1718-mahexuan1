@@ -56,12 +56,13 @@
     _lastIndex = -2;
     [_billTableView reloadData];
 }
-
+//connecting the addBill button to the next page
 - (IBAction)addBills:(id)sender {
     _lastIndex = -1;
     [self performSegueWithIdentifier:@"CreateBillViewController" sender:nil];
 }
 
+//prepare for segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"EditBillViewController"]) {
         EditBillViewController *editBillVC = (EditBillViewController *)segue.destinationViewController;
@@ -84,6 +85,8 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+
+//edit or delete the bill name
 - (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewRowAction *action0 = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"Edit" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
